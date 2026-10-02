@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-10-03
+
+### Added
+- Tailwind CSS v4 (`tailwindcss`, `@tailwindcss/postcss`, `postcss.config.mjs`, `tw-animate-css`) — required prerequisite for shadcn.
+- shadcn 3.6.2 initialized (`shadcn@3.6.2 init`, next template, neutral base, CSS vars): `components.json`, `lib/utils.ts` (`cn` helper), shadcn theme tokens in `app/globals.css`, plus `class-variance-authority`, `clsx`/`tailwind-merge` via `cn`, `lucide-react`, `radix-ui`.
+- `shadcn` pinned to exact `3.6.2` in devDependencies.
+
+### Fixed
+- Repaired `app/globals.css` import order mangled by init (`@import "tailwindcss"` must stay top-level) and removed duplicated `@apply` lines.
+
 ## [0.2.0] - 2026-10-03
 
 ### Changed

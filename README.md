@@ -15,7 +15,8 @@ admin panel, and retro neobrutalism themes ("Beige Computer" / "Phosphor Night")
 - Next.js 16.1.1 + App Router
 - TypeScript
 - ESLint (`eslint-config-next`)
-- Plain CSS (CSS vars + CSS Modules — no Tailwind)
+- Tailwind CSS v4 (+ `@tailwindcss/postcss`, `tw-animate-css`)
+- shadcn 3.6.2 (`components.json`, `@/components`, `@/lib`, `@/hooks` aliases)
 - npm
 
 ## Getting Started
@@ -44,8 +45,12 @@ Edit `app/page.tsx` — the page auto-updates as you edit.
 app/
   layout.tsx      # root layout
   page.tsx        # homepage (default Next.js starter)
-  globals.css     # global styles
+  globals.css     # Tailwind + shadcn theme variables
   page.module.css # homepage styles
+lib/
+  utils.ts        # shadcn `cn` helper
+components.json   # shadcn config (new-york style, neutral base, CSS vars)
+postcss.config.mjs # Tailwind PostCSS plugin
 public/           # static assets (favicon.ico, next.svg, vercel.svg, …)
 next.config.ts
 tsconfig.json
