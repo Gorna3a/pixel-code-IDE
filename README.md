@@ -12,7 +12,7 @@ admin panel, and retro neobrutalism themes ("Beige Computer" / "Phosphor Night")
 
 ## Stack
 
-- Next.js 15 + App Router
+- Next.js 16.1.1 + App Router
 - TypeScript
 - ESLint (`eslint-config-next`)
 - Plain CSS (CSS vars + CSS Modules — no Tailwind)
@@ -46,8 +46,7 @@ app/
   page.tsx        # homepage (default Next.js starter)
   globals.css     # global styles
   page.module.css # homepage styles
-  favicon.ico
-public/           # static assets (next.svg, vercel.svg, …)
+public/           # static assets (favicon.ico, next.svg, vercel.svg, …)
 next.config.ts
 tsconfig.json
 eslint.config.mjs
